@@ -1,5 +1,5 @@
 //switch
-//wap to print the table of given  n
+//wap to print the day corresponding to the number.
 
 #include <iostream>
 using namespace std;
