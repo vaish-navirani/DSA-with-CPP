@@ -1,3 +1,10 @@
+// Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.
+
+// You must not use any built-in exponent function or operator.
+
+// For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
+
+
 #include <iostream>
 using namespace std;
 
@@ -9,14 +16,14 @@ int main() {
     if (x < 0) {
         cout << "Please enter a non-negative number." << endl;
     } else {
-        int result = -1; // Initialize result to -1 as a marker
+        int result = -1; 
         for (int guess = 1; guess <= x; guess++) {
             if (guess * guess == x) {
-                result = guess; // Update result when the square is found
-                break; // Exit the loop early, as we have found the result
+                result = guess; 
+                break; 
             } else if (guess * guess > x) {
-                result = guess - 1; // Set result to the previous value
-                break; // Exit the loop
+                result = guess - 1; 
+                break; 
             }
         }
 

@@ -1,8 +1,8 @@
-
+//wap in cpp to find sum an multiple of 2 no using functions.
 #include<iostream>
 using namespace std;  
 
-int Sum(int m, int n)//Function declaration
+int Sum(int m, int n)//Function declaration with multiple parameters
 {
     int sum = m + n;//function defination
     return sum;    //function defination
@@ -23,7 +23,8 @@ void fun()
     cout<<"Enter values of a and b:";
     cin>>a>>b;
 
-    cout<<Sum(a,b)<<endl;//Function call
+    int ans = Sum(a,b);//Function call
+    cout<<ans<<endl;
     cout<<Mul(a,b)<<endl;//Function call
     fun();
  }
